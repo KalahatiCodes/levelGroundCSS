@@ -1,0 +1,172 @@
+/* DESKTOP 17in/1632px
+@media (min-width:1100px) and (max-width:1200px){
+    
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+
+ p, h1, h2, h3 {
+     line-height: 1.6;
+ }
+ h1{
+     font-size:50px;
+ }
+ h2{
+     font-size: 30px;
+     margin-bottom: 0;
+ }
+ h3{
+     font-size: 20px;
+ }
+header, .top {
+    width: 100%;
+    display: flex;
+}
+header, .opener{
+    background-color: #687789;
+}
+.list {
+    flex: 2;
+}
+.btntop{
+    flex: 1;
+    padding: 10px 40px;
+}
+.logo {
+    flex: 4;
+    padding-right: 80px;
+}
+.toc li{
+    margin: 10px 10px;
+    list-style: none;
+    float: left;
+}
+.toc li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    float: left;
+}
+#logo {
+    padding: 0 40px;
+}
+
+.btntop1 {
+    padding: 10px;
+    background-color:white;
+    color: #687789;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+ .opener {
+    color: white;
+    padding: 2% 10%;
+}
+
+.opener, .why, .you, .thegym, .volunteer {
+    flex-direction: column;
+    clear: both;
+}
+.watchnow {
+    color: white;
+    text-decoration: none;
+}
+.note{
+    color: black;
+    font-size: small;
+    margin-top: 50px;
+}
+.why, .volunteer {
+    padding: 5% 25%;
+}
+
+.visit {
+    display: flex;
+    background-color: lightgray;
+}
+
+.thegym, .you {
+    padding: 70px 70px;
+    flex: 1;
+}
+.thegym {
+    margin-left:100px; 
+}
+.you {
+    margin-right:100px;
+}
+footer {
+    background-color: rgb(25, 51, 58);
+    color: white;
+}
+
+.bottom {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.socials{
+    flex: 1;
+    padding: 20px;
+    margin-right: 200px;
+}
+
+.mailing{
+    flex: 1;
+    padding: 20px;
+    margin-left: 200px;
+
+}
+
+.pwhite {
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* IPHONE 3.5in/336px */
+@media (min-width:200px) and (max-width:400px){
+    .thegym, .you {
+        width: 100%;
+        padding:0;
+        margin: 10px 0 0 0;
+    }
+    .visit, .top {
+        display:block;
+    }
+    .btntop{
+        display: none;
+    }
+    h1{
+        font-size: 37px;
+    }
+    .mailing, .socials{
+        margin:0;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+/* IPAD 9.7in/931px */
+@media (min-width:400px) and (max-width:1100px){
+    .list{
+        flex: 3;
+    }
+    .thegym{
+        margin-left: 0;
+    }
+  
+}
