@@ -1,0 +1,128 @@
+/* FLEX and Alignment*/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.start {
+    justify-items: flex-start;
+}
+.end{
+    justify-content: flex-end;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    text-align: center;
+}
+/* Padding, Margin and width */
+.white{
+    color: white;
+}
+.blueback{
+    background-color: #687789;
+}
+.greenback{
+    background-color: rgb(25, 51, 58);
+}
+.greyback{
+    background-color: lightgrey;
+}
+.pT2x5{
+    padding:5rem 0rem; 
+}
+.p5{
+    padding: 5rem;
+}
+.p1{
+    padding:1rem; 
+}
+.m1{
+    margin:1rem; 
+}
+.width100{
+    width: 100%;
+    border-top: 1px solid white;
+}
+.width40{
+    width: 40%
+}
+.width50{
+    width: 50%
+}
+.width80{
+    width: 80%;
+}
+.width25{
+    width: 25%;
+    padding:3rem;
+}
+/* Buttons */
+.donate{
+    background-color: white;
+    padding: 1rem 2rem;
+}
+.btn{
+    padding: 1rem 2rem;
+    border: 1px solid black;
+}
+
+/* Text */
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+li, li a, a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+h1{
+    font-size: 3rem;
+}
+
+/* IPHONE 3.5in/336px */
+@media only screen and (max-width:900px){
+    #features{
+        display: flex;
+        flex-flow: column;
+    }
+    .width40 , .width50{
+        width: 100% !important;
+        padding: 4rem 1rem;
+    }
+    
+    body{
+        width:fit-content;
+        margin:0;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: .75;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .subf{
+        padding: .25rem;
+        width: 100%;
+        font-size: .25rem;
+    }
+    .btn, .donate{
+        color: black;
+    }
+}
